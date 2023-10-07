@@ -1,9 +1,10 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
 import "../styles/global.css";
 
-const pageTitle = "Home";
+export const pageTitle = "Home";
 ---
 
 <html lang="en">
@@ -19,6 +20,9 @@ const pageTitle = "Home";
 
 		<h1>{pageTitle}</h1>
 
-		<Footer  />
+		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
